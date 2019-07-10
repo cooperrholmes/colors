@@ -1,0 +1,7 @@
+<h1> landing page </h1>
+<%= simple_form_for @choice do |f| %>
+  <%= f.input :color, as: :radio_buttons, collection: [['blue', 'blue'], ['red', 'red'], ['green', 'green']] %>
+  <%= f.button :submit %>
+<% end %>
+
+<%= @most_popular %>
